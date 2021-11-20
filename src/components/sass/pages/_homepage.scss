@@ -1,0 +1,80 @@
+.intro-section {
+	width: $viewportwidth;
+	padding: 1rem;
+}
+
+.intro {
+	width: 114rem;
+	margin: 0 auto;
+	margin-top: 1rem;
+	display: grid;
+	justify-content: center;
+	align-items: center;
+
+	&__image {
+		width: 65rem;
+		align-self: center;
+		@include respond(tab-port) {
+			width: 80vw;
+			margin: 0 auto;
+		}
+	}
+
+	&__title {
+		text-align: center;
+		color: $color-blue;
+		margin-bottom: 3rem;
+		margin-top: 1rem;
+	}
+
+	&__name {
+		display: inline-block;
+		font-size: 3rem;
+		font-weight: 400;
+		margin-bottom: .5rem;
+		border-bottom: 2px solid $color-blue;
+
+		@include respond(tab-port) {
+			font-size: 3.2rem;
+		}
+
+		@include respond(Phone) {
+			font-size: 3.4rem;
+		}
+
+		@include respond(mobile-l) {
+			font-size: 3.6rem;
+		}
+
+		@include respond(mobile-s) {
+			font-size: 3.8rem;
+		}
+	}
+
+	&__work {
+		font-size: 4rem;
+		font-weight: 600;
+		letter-spacing: .1rem;
+
+		@include respond(tab-port) {
+			font-size: 4.2rem;
+		}
+
+		@include respond(Phone) {
+			font-size: 4.4rem;
+		}
+
+		@include respond(mobile-l) {
+			font-size: 4.6rem;
+		}
+
+		@include respond(mobile-s) {
+			font-size: 4.8rem;
+		}
+	}
+
+	@include respond(tab-port) {
+		width: 100%;
+	}
+}
+

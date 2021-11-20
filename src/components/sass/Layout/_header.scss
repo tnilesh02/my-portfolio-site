@@ -1,0 +1,103 @@
+.header-section {
+	width: $viewportwidth;
+
+}
+
+.header {
+	width: 130rem;
+	margin: 0 auto;
+	padding: 2rem 1rem;
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+
+	&__logo-box {
+
+	}
+
+	&__logo {
+		height: 4rem;
+		cursor: pointer;
+
+		@include respond(tab-port) {
+			height: 4.5rem;
+		}
+	}
+
+	&__navigation-box {
+		display: grid;
+		justify-items: end;
+		align-items: center;
+	}
+
+	&__navigation {
+
+	}
+
+	&__link--1 {
+		color: $color-black;
+		font-size: 1.8rem;
+		text-decoration: none;
+		margin-right: 2rem;
+		transition: all .2s ease-in-out;
+
+		&:hover {
+			color: $color-blue;
+		}
+
+		@include respond(tab-port) {
+			font-size: 2rem;
+		}
+
+		@include respond(phone) {
+			font-size: 2.2rem;
+		}
+
+		@include respond(mobile-l) {
+			font-size: 2.4rem;
+		}
+
+		@include respond(mobile-s) {
+			font-size: 2.6rem;
+		}
+	}
+
+	&__link--2 {
+		color: $color-blue;
+		font-size: 1.8rem;
+		text-decoration: none;
+		border: 2px solid $color-blue;
+		padding: 1rem 1.2rem;
+		border-radius: 4rem;
+		transition: all .2s ease-in-out;
+
+		&:hover {
+			background-color: $color-blue;
+			color: $color-white;		
+		}
+
+		@include respond(tab-port) {
+			font-size: 2rem;
+		}
+
+		@include respond(phone) {
+			font-size: 2.2rem;
+		}
+
+		@include respond(mobile-l) {
+			font-size: 2.4rem;
+		}
+
+		@include respond(mobile-s) {
+			font-size: 2.6rem;
+		}
+	}
+
+	@include respond(tab-land) {
+		width: 100%;
+		padding: 2rem 2rem;
+	}
+
+	@include respond(tab-port) {
+
+	}
+}
