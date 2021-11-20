@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/tnilesh02/tnilesh02.github.io/static/css/main.59fe1c9f.chunk.css",
+    "main.js": "/tnilesh02/tnilesh02.github.io/static/js/main.05e93adb.chunk.js",
+    "main.js.map": "/tnilesh02/tnilesh02.github.io/static/js/main.05e93adb.chunk.js.map",
+    "runtime-main.js": "/tnilesh02/tnilesh02.github.io/static/js/runtime-main.3ff96a01.js",
+    "runtime-main.js.map": "/tnilesh02/tnilesh02.github.io/static/js/runtime-main.3ff96a01.js.map",
+    "static/js/2.2c226137.chunk.js": "/tnilesh02/tnilesh02.github.io/static/js/2.2c226137.chunk.js",
+    "static/js/2.2c226137.chunk.js.map": "/tnilesh02/tnilesh02.github.io/static/js/2.2c226137.chunk.js.map",
+    "static/js/3.e6f9ed68.chunk.js": "/tnilesh02/tnilesh02.github.io/static/js/3.e6f9ed68.chunk.js",
+    "static/js/3.e6f9ed68.chunk.js.map": "/tnilesh02/tnilesh02.github.io/static/js/3.e6f9ed68.chunk.js.map",
+    "index.html": "/tnilesh02/tnilesh02.github.io/index.html",
+    "static/css/main.59fe1c9f.chunk.css.map": "/tnilesh02/tnilesh02.github.io/static/css/main.59fe1c9f.chunk.css.map",
+    "static/js/2.2c226137.chunk.js.LICENSE.txt": "/tnilesh02/tnilesh02.github.io/static/js/2.2c226137.chunk.js.LICENSE.txt",
+    "static/media/NT-logo.198b86ec.svg": "/tnilesh02/tnilesh02.github.io/static/media/NT-logo.198b86ec.svg",
+    "static/media/logo.6ce24c58.svg": "/tnilesh02/tnilesh02.github.io/static/media/logo.6ce24c58.svg",
+    "static/media/webdesigner.908fd60d.svg": "/tnilesh02/tnilesh02.github.io/static/media/webdesigner.908fd60d.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.3ff96a01.js",
+    "static/js/2.2c226137.chunk.js",
+    "static/css/main.59fe1c9f.chunk.css",
+    "static/js/main.05e93adb.chunk.js"
+  ]
+}
