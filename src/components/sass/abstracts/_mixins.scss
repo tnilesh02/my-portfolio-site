@@ -47,7 +47,7 @@ ORDER: Base + typography > general layout + grid > page layout > components
 		 @media handheld,screen and (max-width: 26.6em) { @content };  // mobile-l
 	}
 
-	@if $breakpoint == phone {
+	@if $breakpoint == Phone {
 		 @media handheld,screen and (max-width: 37.5em) { @content };  // Phone
 	}
 

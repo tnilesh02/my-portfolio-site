@@ -1,10 +1,15 @@
+.container {
+	width: $viewportwidth;
+}
+
 .intro-section {
 	width: $viewportwidth;
 	padding: 1rem;
+	padding-bottom: 0rem;
 }
 
 .intro {
-	width: 114rem;
+	max-width: 114rem;
 	margin: 0 auto;
 	margin-top: 1rem;
 	display: grid;
@@ -13,16 +18,18 @@
 
 	&__image {
 		width: 65rem;
+		margin-bottom: -.6rem;
 		align-self: center;
 		@include respond(tab-port) {
 			width: 80vw;
 			margin: 0 auto;
+			margin-bottom: -.6rem;
 		}
 	}
 
 	&__title {
 		text-align: center;
-		color: $color-blue;
+		color: $color-black;
 		margin-bottom: 3rem;
 		margin-top: 1rem;
 	}
@@ -32,22 +39,25 @@
 		font-size: 3rem;
 		font-weight: 400;
 		margin-bottom: .5rem;
-		border-bottom: 2px solid $color-blue;
 
-		@include respond(tab-port) {
+		@include respond(tab-land) {
 			font-size: 3.2rem;
 		}
 
-		@include respond(Phone) {
-			font-size: 3.4rem;
-		}
-
-		@include respond(mobile-l) {
+		@include respond(tab-port) {
 			font-size: 3.6rem;
 		}
 
+		@include respond(Phone) {
+			font-size: 3.5rem;
+		}
+
+		@include respond(mobile-l) {
+			
+		}
+
 		@include respond(mobile-s) {
-			font-size: 3.8rem;
+			
 		}
 	}
 
@@ -56,25 +66,181 @@
 		font-weight: 600;
 		letter-spacing: .1rem;
 
+		@include respond(tab-land) {
+			font-size: 4.3rem;
+		}
+
 		@include respond(tab-port) {
-			font-size: 4.2rem;
+			font-size: 4.8rem;
 		}
 
 		@include respond(Phone) {
-			font-size: 4.4rem;
+			font-size: 4.8rem;
 		}
 
 		@include respond(mobile-l) {
-			font-size: 4.6rem;
+			
 		}
 
 		@include respond(mobile-s) {
-			font-size: 4.8rem;
+			
 		}
 	}
 
-	@include respond(tab-port) {
+	@include respond(tab-land) {
 		width: 100%;
 	}
 }
 
+.threesteps-section {
+	width: $viewportwidth;
+	background-color: $color-blue;
+}
+
+.threesteps {
+	max-width: 114rem;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 5rem;
+	padding: 3rem 1rem;
+
+	&__item {
+		display:grid;
+		text-align: center;
+		padding: 1rem 2rem;
+		width: 100%;
+
+		color: $color-white;
+
+		&--image {
+			margin: 0 auto;
+			height: 17rem;
+			align-self: center;
+
+			@include respond(tab-land) {
+				height: 18.8rem;
+			}
+
+			@include respond(tab-port) {
+				height: 21.25rem;
+			}
+
+			@include respond(Phone) {
+				height: 26.25rem;
+			}
+		}
+
+		&--title {
+			font-size: 2.5rem;
+			font-weight: 600;
+			margin-bottom: .3rem;
+
+			@include respond(tab-land) {
+				font-size: 2.8rem;
+			}
+
+			@include respond(tab-port) {
+				font-size: 3rem;
+			}
+
+			@include respond(Phone) {
+				font-size: 3.5rem;
+			}
+		
+		}
+
+		&--text {
+			font-size: 1.6rem;
+			width: 80%;
+			margin: 0 auto;
+
+			@include respond(tab-land) {
+				font-size: 1.7rem;
+			}
+
+			@include respond(tab-port) {
+				font-size: 2rem;
+				width: 90%;
+			}
+
+			@include respond(Phone) {
+				font-size: 2.2rem;
+			}
+		}
+
+		@include respond(tab-land) {
+			padding: 1rem 1rem;
+		}
+	}
+
+	@include respond(tab-land) {
+		width: 100%;
+		grid-template-columns: 80%;
+		justify-content: center;
+		padding: 2rem 1rem;
+		grid-gap: 2rem;
+	}
+}
+
+.techstack-section {
+	width: $viewportwidth;
+	background-color: $color-white;
+}
+
+.techstack {
+	width: 114rem;
+	margin: 0 auto;
+	padding: 2rem 1rem;
+	&__items {
+		margin-top: 2rem;
+		text-align: center;
+
+		&:not(:last-child) {
+			margin-bottom: 3rem;
+		}
+
+		&--title {
+			font-size: 2.5rem;
+			margin-bottom: 2rem;
+
+			@include respond(tab-land) {
+				font-size: 2.8rem;
+			}
+
+			@include respond(tab-port) {
+				font-size: 3rem;
+			}
+
+			@include respond(Phone) {
+				font-size: 3.5rem;
+			}
+		}
+
+		&--list {
+			display: grid;
+			grid-template-columns: repeat(6,1fr);
+			grid-gap: 2rem;
+			justify-content: center;
+			align-items: center;
+
+			@include respond(tab-port) {
+				grid-template-columns: repeat(4,1fr);
+			}
+
+			@include respond(Phone) {
+				grid-template-columns: repeat(3,1fr);
+			}
+
+			@include respond(mobile-l) {
+				grid-template-columns: repeat(2,1fr);
+				grid-gap: 2rem;
+			}
+		}
+	}
+
+
+	@include respond(tab-land) {
+		width: 80%;
+	}
+}

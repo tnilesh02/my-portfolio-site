@@ -1,0 +1,41 @@
+.techstack__box {
+
+	&--image {
+		height: 100%;
+	}
+
+	&--image-box {
+		height: 10rem;
+		margin-bottom: 1rem;
+	}
+
+	&--title {
+		font-size: 1.8rem;
+		color: rgba($color-black, .4);
+		
+		@include respond(tab-land) {
+			font-size: 1.8rem;
+		}
+
+		@include respond(tab-port) {
+			font-size: 2.1rem;
+			
+		}
+
+		@include respond(Phone) {
+			font-size: 2.3rem;
+		}
+	}
+
+	@include respond(tab-land) {
+		margin-bottom: 2rem;
+	}
+
+	@include respond(tab-port) {
+		
+	}
+
+	@include respond(Phone) {
+		
+	}
+}
