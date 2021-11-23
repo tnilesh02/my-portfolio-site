@@ -7,6 +7,18 @@
 	&--image-box {
 		height: 10rem;
 		margin-bottom: 1rem;
+
+		@include respond(tab-land) {
+			height: 11rem;
+		}
+
+		@include respond(tab-port) {
+			height: 12rem;
+		}
+
+		@include respond(Phone) {
+			height: 14rem;
+		}
 	}
 
 	&--title {

@@ -221,8 +221,6 @@
 			display: grid;
 			grid-template-columns: repeat(6,1fr);
 			grid-gap: 2rem;
-			justify-content: center;
-			align-items: center;
 
 			@include respond(tab-port) {
 				grid-template-columns: repeat(4,1fr);
