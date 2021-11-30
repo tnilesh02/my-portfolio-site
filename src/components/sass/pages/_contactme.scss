@@ -1,0 +1,135 @@
+.contact-me-section {
+	width: $viewportwidth;
+	margin-top: 2rem;
+}
+
+.contact-me {
+	width: 114rem;
+	margin: 0 auto;
+	padding: 1rem 2rem;
+	
+
+	&__title {
+		font-size: 4.8rem;
+		text-align: center;
+		font-weight: 200;
+		width: 90%;
+		margin: 0 auto;
+
+		@include respond(tab-land) {
+			font-size: 5rem;
+		}
+
+		@include respond(tab-port) {
+			font-size: 5.2rem;
+		}
+
+		@include respond(Phone) {
+			font-size: 3.5rem;
+			width: 95%;
+		}
+	}
+
+	&__form {
+		margin: 0 auto;
+		margin-top: 4rem;
+		width: 70%;
+
+		display: grid;
+
+		&--name-and-email {
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			grid-gap: 2rem;
+			margin-top: 2rem;
+
+			@include respond(Phone) {
+				grid-template-columns: 1fr;
+			}
+		}
+
+		&--message {
+			margin-top: 2rem;
+		}
+
+		@include respond(tab-land) {
+			width: 80%;
+		}
+
+		@include respond(tab-port) {
+		
+		}
+
+		@include respond(Phone) {
+			width: 95%;
+			margin-top: 1rem;
+		}
+	}
+
+	&__label {
+		display: block;
+		font-size: 2.5rem;
+		color: darken($color-grey-light,30%);
+	}
+
+	&__input {
+		width: 100%;
+		padding: 1rem 1.5rem;
+		font-size: 2.5rem;
+		margin-top: .5rem;
+		color: darken($color-grey-light,70%);
+
+		&:focus {
+			outline: none;
+			border: 1px solid darken($color-grey-light,10%);
+		}
+	}
+
+	&__textarea {
+		width: 100%;
+		resize: none;
+		font-size: 2.5rem;
+		padding: 1rem 1.5rem;
+		margin-top: .5rem;
+		font-family: inherit;
+		color: darken($color-grey-light,70%);
+
+		&:focus {
+			outline: none;
+			border: 1px solid darken($color-grey-light,10%);
+		}
+	}
+
+	&__button {
+		margin: 4rem auto;
+		align-self: center;
+		padding: 1.5rem 4rem;
+		background-color: $color-white;
+		border: 1px solid $color-blue;
+		color: $color-blue;
+		border-radius: 5rem;
+		font-size: 2rem;
+		font-weight: 400;
+		transition: all .2s ease-in-out;
+
+		&:hover {
+			background-color: $color-blue;
+			color: $color-white;
+			padding: 1.5rem 5rem;
+		}
+
+		@include respond(tab-land) {
+
+		}
+
+		@include respond(Phone) {
+			width: 100%;
+			font-size: 2.3rem;
+		}
+	}
+
+	@include respond(tab-land) {
+		width: 100%;
+	}
+
+}

@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 
 // Layout
 import Header from '../Layout/_header.jsx';
+import Footer from '../Layout/_footer.jsx';
 
 // Images
 import Webdesigner from '../../assets/webdesigner.svg';
@@ -11,9 +13,11 @@ import Build from '../../assets/build-03.svg';
 
 // data
 import {Languages, Tools} from './imageData';
+import { Projects } from './projectsData';
 
 // ui
 import TechstackBox from '../ui/techstackbox.jsx';
+import Project from '../ui/project.jsx';
 
 export default class Homepage extends Component {
 
@@ -21,6 +25,7 @@ export default class Homepage extends Component {
 
 		const lang = Languages.map(item => <TechstackBox title={item.name} source={item.source}/> );
 		const tools = Tools.map(item => <TechstackBox title={item.name} source={item.source}/> );
+		const projects = Projects.map(item => <Project data={item}/>);
 		return (
 			<div className="container">
 				<Header />
@@ -70,6 +75,32 @@ export default class Homepage extends Component {
 						</div>
 					</div>
 				</div>
+				<div id="#projects" className="projects-section">
+
+					<div className="projects">
+						<div className="projects__title">Projects</div>
+						<div className="projects__description">Here are some work I have done recently</div>
+						<div className="projects__list">
+						{projects}
+						</div>
+					</div>
+				</div>
+				<div className="c-section">
+					<div className="cont">
+						<div className="cont__left">
+							<div className="cont__title">
+								Start a project
+							</div>
+							<div className="cont__description">
+								Interested in working together? We should queue up a chat. I'll buy the chai.
+							</div>
+						</div>
+						<div className="cont__right">
+							<Link to="/contact-me" className="cont__link">Contact me</Link>
+						</div>
+					</div>
+				</div>
+				<Footer />
 			</div>
 			)
 	}

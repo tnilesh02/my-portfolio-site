@@ -186,6 +186,7 @@
 .techstack-section {
 	width: $viewportwidth;
 	background-color: $color-white;
+	margin-top: 2rem;
 }
 
 .techstack {
@@ -202,6 +203,7 @@
 
 		&--title {
 			font-size: 2.5rem;
+			font-weight: 600;
 			margin-bottom: 2rem;
 
 			@include respond(tab-land) {
@@ -218,6 +220,7 @@
 		}
 
 		&--list {
+			margin-top: 2rem;
 			display: grid;
 			grid-template-columns: repeat(6,1fr);
 			grid-gap: 2rem;
@@ -240,5 +243,128 @@
 
 	@include respond(tab-land) {
 		width: 80%;
+	}
+}
+
+.projects-section {
+	width: $viewportwidth;
+	margin-top: 6rem;
+	margin-bottom: 6rem;
+}
+
+.projects {
+	width: 114rem;
+	margin: 0 auto;
+	&__title {
+		font-size: 2.5rem;
+		text-align: center;
+		font-weight: 600;
+
+		@include respond(tab-land) {
+				font-size: 2.8rem;
+			}
+
+			@include respond(tab-port) {
+				font-size: 3rem;
+			}
+
+			@include respond(Phone) {
+				font-size: 3.5rem;
+			}
+	}
+
+	&__description {
+		font-size: 2rem;
+		font-weight: 200;
+		text-align: center;
+	}
+
+	&__list {
+		display: grid;
+		grid-template-columns: repeat(2,1fr);
+		grid-gap: 6rem;
+
+		@include respond(tab-port) {
+			grid-template-columns: 1fr;
+			grid-gap: 3rem;
+		}
+	}
+
+	@include respond(tab-land) {
+		width: 100%;
+		padding: 0 2rem;
+	}
+}
+
+.c-section {
+	width: $viewportwidth;
+	margin-top: 4rem;
+	background-color: $color-blue;
+	padding: 3rem;
+}
+
+.cont {
+	width: 114rem;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 2rem;
+	padding: 1rem 2rem;
+	color: white;
+
+	&__left {
+		text-align: center;
+	}
+
+	&__title {
+		font-size: 3.2rem;
+		font-weight: 600;
+	}
+
+	&__description {
+		font-size: 1.8rem;
+		width: 80%;
+		margin: 0 auto;
+
+		@include respond(tab-port) {
+			width: 90%;
+			font-size: 2rem;
+		}
+
+		@include respond(Phone) {
+			font-size: 2.2rem;
+			width: 100%;
+		}
+	}
+
+	&__right {
+		display: grid;
+		justify-content: center;
+	}
+
+	&__link {
+		align-self: center;
+		font-size: 2rem;
+		text-decoration: none;
+		color: white;
+		border: 2px solid white;
+		padding: 1rem 2rem;
+		border-radius: 3rem;
+		width: 15rem;
+		text-align: center;
+		transition: all .2s ease-in-out;
+
+		&:hover {
+			background-color: white;
+			color: $color-blue;
+		}
+	}
+
+	@include respond(tab-land) {
+		width: 100%;
+	}
+
+	@include respond(tab-port) {
+		grid-template-columns: 1fr;
 	}
 }

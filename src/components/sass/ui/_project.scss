@@ -1,0 +1,76 @@
+.project {
+	margin-top: 3rem;
+	&__box {
+		height: 30rem;
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+		transition: all 2s ease-in-out;
+		border: 2px solid $color-blue;
+		border-radius: 1rem;
+
+		&:hover {
+			background-size: 110%;
+		}
+
+		@include respond(Phone) {
+			background-size: 11
+		}
+	}
+
+	&__content {
+		background-color: rgba($color-black,.8);
+		height: 100%;
+		width: 100%;
+		text-align: center;
+		display: grid;
+		align-items: center;
+		transition: all .2s ease-in-out;
+		opacity: 0;
+		padding: 2rem 1rem;
+		border-radius: .8rem;
+
+		&:hover {
+			opacity: 1;
+		}
+
+	}
+
+	&__title {
+		color: $color-white;
+		font-size: 4rem;
+
+	}
+
+	&__description {
+		font-size: 2rem;
+		color: $color-white;
+		width: 80%;
+		margin: 0rem auto;
+		margin-bottom: 2rem;
+
+		@include respond(Phone) {
+			width: 90%;
+		}
+	}
+
+	&__link {
+		text-decoration: none;
+		color: $color-blue;
+		border: 2px solid $color-blue;
+		font-size: 2rem;
+		padding: 1rem 2rem;
+		border-radius: 3rem;
+		width: 35%;
+		margin: 0 auto;
+
+		&:hover {
+			background-color: $color-blue;
+			color: white;
+		}
+
+		@include respond(Phone) {
+			width: 50%;
+		}
+	}
+}
